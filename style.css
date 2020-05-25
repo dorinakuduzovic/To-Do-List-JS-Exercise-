@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body {
+    background-color: #387780;
+    max-height: 100vh;
+}
+
+.header {
+    background-color: #FF595E;
+    -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+h1, form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  
+}
+
+.container {
+    background-color: white;
+    max-width: 40%;
+    margin: 0 auto;
+    margin-top: 5em;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(52, 50, 50, 0.63);
+    -moz-box-shadow:    3px 3px 5px 0px rgba(52, 50, 50, 0.63);
+    box-shadow:         3px 3px 5px 0px rgba(52, 50, 50, 0.63);
+    border-radius: .3em;
+}
+
+form input {
+    width: 50%;
+    padding: 12px;
+    resize: vertical;
+    border: none;
+    border-radius: .3em;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(52, 50, 50, 0.63);
+    -moz-box-shadow:    3px 3px 5px 0px rgba(52, 50, 50, 0.63);
+    box-shadow:         3px 3px 5px 0px rgba(52, 50, 50, 0.63);
+    border-radius: .3em;
+    background: white;
+    margin-right: 2em;
+}
+
+form button {
+    width: 20%;
+    padding: 12px;
+    resize: vertical;
+    border: none;
+    border-radius: .3em;
+    background-color: #FF595E;
+    cursor: pointer;
+    transition: all .3s ease;
+    font-weight: bold;
+    color: white;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(52, 50, 50, 0.63);
+    -moz-box-shadow:    3px 3px 5px 0px rgba(52, 50, 50, 0.63);
+    box-shadow:         3px 3px 5px 0px rgba(52, 50, 50, 0.63);
+}
+
+form button:hover {
+    color: #FF595E;
+    background-color: white;
+    border: 2px solid #FF595E;
+}
+
+.task-container {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-list {
+    min-width: 70%;
+    list-style: none;
+}
+
+.task {
+
+    margin: .5rem;
+    background-color: white;
+    color: black;
+    border: none;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(52, 50, 50, 0.63);
+    -moz-box-shadow:    3px 3px 5px 0px rgba(52, 50, 50, 0.63);
+    box-shadow:         3px 3px 5px 0px rgba(52, 50, 50, 0.63);
+    border-radius: .3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .5s ease;
+}
+
+.task li {
+    flex: 1;
+}
+
+.done-btn, .delete-btn {
+    background: #84DCC6;
+    color: white;
+    border: none;
+    padding: .8rem;
+    cursor: pointer;
+    font-size: .7rem;
+}
+
+.delete-btn {
+    background-color: #BB0A21;
+}
+
+.task-item {
+    padding: 0rem .5rem;
+}
+
+.fa-trash, .fa-check {
+    pointer-events: none;
+}
+
+ .done {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
